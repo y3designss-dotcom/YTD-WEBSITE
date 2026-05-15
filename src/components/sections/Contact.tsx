@@ -34,7 +34,7 @@ export default function Contact() {
   const bgX = useTransform(smoothProgress, [0, 1], ["0%", "-30%"]);
 
   return (
-    <section ref={sectionRef} className={styles.root} id="contact">
+    <section ref={sectionRef} className={styles.root} id="contacts">
       <div className={styles.marqueeContainer}>
         <motion.div style={{ x: bgX }} className={styles.marqueeTrack}>
            {Array.from({length: 8}).map((_, i) => (
@@ -45,7 +45,7 @@ export default function Contact() {
 
       <div className={styles.header}>
         <span className={styles.label}>Get in Touch</span>
-        <h2 className={styles.headline}>Let's Build Something <br /><span className={styles.accentText}>Extraordinary</span></h2>
+        <h2 className={styles.headline}>Let&apos;s Build Something <br /><span className={styles.accentText}>Extraordinary</span></h2>
       </div>
 
       <div className={styles.container}>

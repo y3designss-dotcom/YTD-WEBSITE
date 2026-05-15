@@ -6,11 +6,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styles from './Navbar.module.css';
 
 const menuLinks = [
-  { name: 'PROJECTS', href: '#projects', desc: 'OUR ARCHITECTURAL PORTFOLIO' },
-  { name: 'STAGES', href: '#process', desc: 'DESIGN & CREATION PROCESS' },
-  { name: 'ABOUT US', href: '#about', desc: 'STUDIO PHILOSOPHY & MISSION' },
-  { name: 'REVIEWS', href: '#reviews', desc: 'CLIENT TESTIMONIALS' },
-  { name: 'CONTACTS', href: '#contacts', desc: 'START YOUR PROJECT' },
+  { name: 'PROJECTS', href: '/projects', desc: 'OUR ARCHITECTURAL PORTFOLIO' },
+  { name: 'STAGES', href: '/#process', desc: 'DESIGN & CREATION PROCESS' },
+  { name: 'ABOUT US', href: '/#about', desc: 'STUDIO PHILOSOPHY & MISSION' },
+  { name: 'REVIEWS', href: '/#reviews', desc: 'CLIENT TESTIMONIALS' },
+  { name: 'CONTACTS', href: '/#contacts', desc: 'START YOUR PROJECT' },
 ];
 
 export default function Navbar() {

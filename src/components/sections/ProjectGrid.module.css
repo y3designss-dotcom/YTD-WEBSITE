@@ -3,12 +3,12 @@
   background: #111;
   z-index: 10;
   width: 100%;
-  padding-bottom: 20vh;
+  padding-bottom: 12vh;
 }
 
 .marqueeContainer {
   position: sticky;
-  top: 15vh;
+  top: 12vh;
   width: 100%;
   overflow: hidden;
   pointer-events: none;
@@ -21,10 +21,10 @@
 }
 
 .marqueeTrack span {
-  font-size: clamp(3rem, 10vw, 7rem);
+  font-size: clamp(2.4rem, 7vw, 5.2rem);
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 1.5rem;
+  letter-spacing: 1rem;
 }
 
 .mFilled {
@@ -40,8 +40,8 @@
   z-index: 10;
   display: flex;
   flex-direction: column;
-  gap: 30vh;
-  padding-top: 10vh;
+  gap: 16vh;
+  padding-top: 7vh;
 }
 
 .cardWrapper {
@@ -52,8 +52,8 @@
 }
 
 .projectCard {
-  width: clamp(300px, 85vw, 1200px);
-  height: clamp(600px, 85vh, 850px);
+  width: clamp(300px, 72vw, 920px);
+  height: clamp(420px, 62vh, 620px);
   background: #000;
   border-radius: 4px;
   overflow: hidden;
@@ -95,25 +95,25 @@
 .projectInfo {
   width: 100%;
   height: 40%;
-  padding: 3rem 4rem;
+  padding: 1.8rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 2rem;
+  gap: 1rem;
   z-index: 10;
 }
 
 .projectLocation {
-  font-size: 0.7rem;
-  letter-spacing: 0.4rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.28rem;
   color: var(--accent, #e5cca8);
   text-transform: uppercase;
 }
 
 .projectTitle {
-  font-size: clamp(1.4rem, 4vw, 3rem);
+  font-size: clamp(1.15rem, 2.6vw, 2.25rem);
   line-height: 1;
   text-transform: uppercase;
   margin: 0;
@@ -135,9 +135,16 @@
   opacity: 0.6;
 }
 
+.projectSummary {
+  max-width: 520px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
 .moreLink {
-  font-size: 0.75rem;
-  letter-spacing: 0.3rem;
+  font-size: 0.66rem;
+  letter-spacing: 0.22rem;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
@@ -153,9 +160,9 @@
 
 .projectNum {
   position: absolute;
-  top: 40px;
-  right: 40px;
-  font-size: 4rem;
+  top: 28px;
+  right: 30px;
+  font-size: 3rem;
   font-weight: 900;
   color: #fff;
   opacity: 0.05;
@@ -163,23 +170,30 @@
 }
 
 .exploreAll {
-  margin-top: 8vh; /* Reduced from 15vh */
+  margin-top: 5vh; /* Reduced from 15vh */
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem; /* Reduced */
 }
 
+.exploreLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
 .exploreBtn {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(1.5rem, 3.6vw, 3rem);
   font-weight: 900;
   color: #fff;
   text-transform: uppercase;
 }
 
 .exploreCircle {
-  width: 120px;
-  height: 120px;
+  width: 86px;
+  height: 86px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
@@ -191,8 +205,8 @@
 }
 
 .exploreCircle svg {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .exploreCircle:hover {
@@ -202,10 +216,10 @@
 
 @media (max-width: 1024px) {
   .projectCard {
-    height: 65vh;
+    height: 56vh;
   }
   .projectInfo {
-    padding: 2.5rem;
+    padding: 1.6rem;
   }
 }
 
@@ -221,11 +235,11 @@
      color: rgba(255, 255, 255, 0.12); /* Slightly more readable */
   }
   .verticalList {
-    gap: 10vh;
+    gap: 8vh;
   }
   .projectCard {
-    height: 60vh;
-    width: 95vw;
+    height: 52vh;
+    width: 92vw;
   }
   .imageBox {
     height: 55%;
@@ -233,6 +247,9 @@
   .projectInfo {
     padding: 1.5rem;
     gap: 1.2rem;
+  }
+  .projectSummary {
+    display: none;
   }
   .exploreAll {
     margin-top: 4vh;

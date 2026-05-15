@@ -39,10 +39,10 @@ export default function Footer() {
               <div className={styles.col}>
                  <span className={styles.colLabel}>NAVIGATION</span>
                  <nav className={styles.colNav}>
-                    <Link href="#projects">PORTFOLIO</Link>
-                    <Link href="#process">METHODOLOGY</Link>
-                    <Link href="#about">PHILOSOPHY</Link>
-                    <Link href="#contact">INQUIRIES</Link>
+                    <Link href="/projects">PORTFOLIO</Link>
+                    <Link href="/#process">METHODOLOGY</Link>
+                    <Link href="/#about">PHILOSOPHY</Link>
+                    <Link href="/#contacts">INQUIRIES</Link>
                  </nav>
               </div>
            </div>

@@ -7,7 +7,11 @@ import styles from './Hero.module.css';
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
-  const [ctaPosition, setCtaPosition] = useState({ x: 0, y: 0 });
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  useEffect(() => {
+    setIsHydrated(true);
+  }, []);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -15,7 +19,6 @@ export default function Hero() {
   });
 
   const y1 = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, -150]);
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
@@ -87,7 +90,7 @@ export default function Hero() {
             style={{ 
               x: springX, 
               y: springY,
-              opacity
+              opacity: isHydrated ? opacity : 1
             }}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -108,12 +111,12 @@ export default function Hero() {
         </div>
       </div>
 
-      <motion.div className={styles.scrollIndicator} style={{ opacity }}>
+      <motion.div className={styles.scrollIndicator} style={{ opacity: isHydrated ? opacity : 1 }}>
         <span className={styles.scrollText}>EXPLORE</span>
         <div className={styles.scrollLine}></div>
       </motion.div>
 
-      <motion.div className={styles.background} style={{ scale }}>
+      <motion.div className={styles.background} style={{ scale: isHydrated ? scale : 1 }}>
         <div className={styles.overlay}></div>
         <img 
           src="/banner.jpeg" 

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'framer-motion';
+import { motion, MotionValue, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import styles from './Reach.module.css';
 
@@ -104,7 +104,15 @@ export default function Reach() {
   );
 }
 
-function StatCard({ stat, index, parentScroll }: { stat: typeof stats[0], index: number, parentScroll: any }) {
+function StatCard({
+  stat,
+  index,
+  parentScroll,
+}: {
+  stat: typeof stats[0];
+  index: number;
+  parentScroll: MotionValue<number>;
+}) {
   const cardRef = useRef<HTMLDivElement>(null);
   
   // Custom drift effect

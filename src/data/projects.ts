@@ -1,0 +1,218 @@
+export type Project = {
+  slug: string;
+  folder: string;
+  title: string;
+  category: string;
+  location: string;
+  year: string;
+  cover: string;
+  summary: string;
+  description: string;
+  details: string[];
+  images: string[];
+};
+
+const image = (folder: string, file: string) => `/projects/${folder}/${file}`;
+
+export const projects: Project[] = [
+  {
+    slug: "camelias-apartment-gurgaon",
+    folder: "camelias-apartment-camelia(gurgaon)",
+    title: "Camelias Apartment",
+    category: "Residential Interior",
+    location: "Gurgaon",
+    year: "2026",
+    cover: image("camelias-apartment-camelia(gurgaon)", "SOFA WALL.jpg (2) (1).webp"),
+    summary:
+      "A refined apartment interior shaped around warm surfaces, composed wall details, and a calm luxury palette.",
+    description:
+      "The Camelias Apartment is designed as a quiet, polished residence where every wall plane carries purpose. Layered shelving, tailored TV units, soft bedroom backdrops, and restrained material contrasts create a home that feels elegant without becoming loud.",
+    details: ["Apartment residence", "Custom wall treatments", "Living, bedroom, TV and display areas"],
+    images: [
+      image("camelias-apartment-camelia(gurgaon)", "BED BACK ..webp"),
+      image("camelias-apartment-camelia(gurgaon)", "BED WALL.jpg (1).webp"),
+      image("camelias-apartment-camelia(gurgaon)", "SHELF WALL.webp"),
+      image("camelias-apartment-camelia(gurgaon)", "SOFA WALL.jpg (2) (1).webp"),
+      image("camelias-apartment-camelia(gurgaon)", "TV UNIT .jpg (1).webp"),
+      image("camelias-apartment-camelia(gurgaon)", "TV UNIT.webp"),
+      image("camelias-apartment-camelia(gurgaon)", "TV WALL.jpg (1).webp"),
+      image("camelias-apartment-camelia(gurgaon)", "VIEW 4.jpg (7).webp"),
+    ],
+  },
+  {
+    slug: "deramandi-farmhouse",
+    folder: "deramandi-farmhouse",
+    title: "Deramandi Farmhouse",
+    category: "Farmhouse Architecture",
+    location: "Delhi NCR",
+    year: "2026",
+    cover: image("deramandi-farmhouse", "2J3A7704-HDR (1).webp"),
+    summary:
+      "A generous farmhouse environment balancing open-air leisure, architectural massing, and relaxed family living.",
+    description:
+      "Deramandi Farmhouse brings together expansive outdoor moments and considered interior transitions. The project celebrates scale, natural light, and a resort-like rhythm while keeping the spaces grounded for everyday gatherings.",
+    details: ["Farmhouse residence", "Indoor-outdoor planning", "Landscape-facing social spaces"],
+    images: [
+      image("deramandi-farmhouse", "2J3A7653-HDR Ee.webp"),
+      image("deramandi-farmhouse", "2J3A7702-HDR Ee.webp"),
+      image("deramandi-farmhouse", "2J3A7704-HDR (1).webp"),
+      image("deramandi-farmhouse", "2J3A7704-HDR (2).webp"),
+      image("deramandi-farmhouse", "2J3A7716-HDR.webp"),
+      image("deramandi-farmhouse", "2J3A7720-HDR.webp"),
+      image("deramandi-farmhouse", "2J3A7724-HDR.webp"),
+      image("deramandi-farmhouse", "2J3A7732-HDR.webp"),
+      image("deramandi-farmhouse", "2J3A7736-HDR.webp"),
+      image("deramandi-farmhouse", "2J3A7742-HDR.webp"),
+      image("deramandi-farmhouse", "2J3A7744-HDR.webp"),
+      image("deramandi-farmhouse", "2J3A7748-HDR.webp"),
+      image("deramandi-farmhouse", "2J3A7752-HDR.webp"),
+      image("deramandi-farmhouse", "2J3A7764-HDR copy.webp"),
+      image("deramandi-farmhouse", "2J3A7776-HDR (1).webp"),
+      image("deramandi-farmhouse", "2J3A7822-HDR.webp"),
+      image("deramandi-farmhouse", "2J3A7836-HDR (1).webp"),
+      image("deramandi-farmhouse", "2J3A7868-HDR 1-2.webp"),
+      image("deramandi-farmhouse", "2J3A7876-HDR copy.webp"),
+      image("deramandi-farmhouse", "2J3A7880-HDR (1).webp"),
+      image("deramandi-farmhouse", "2J3A7892-HDR (1).webp"),
+      image("deramandi-farmhouse", "2J3A7911-HDR.webp"),
+      image("deramandi-farmhouse", "2J3A7987-HDR-2.webp"),
+      image("deramandi-farmhouse", "2J3A7991-HDR.webp"),
+      image("deramandi-farmhouse", "2J3A7995-HDR.webp"),
+      image("deramandi-farmhouse", "2J3A7999-HDR.webp"),
+      image("deramandi-farmhouse", "2J3A8003-HDR.webp"),
+    ],
+  },
+  {
+    slug: "gk-basement-entertainment-area",
+    folder: "GK-basement-entertainment-area-holidayhome-delhi",
+    title: "GK Basement Entertainment Area",
+    category: "Holiday Home Interior",
+    location: "Delhi",
+    year: "2026",
+    cover: image("GK-basement-entertainment-area-holidayhome-delhi", "Picture1.webp"),
+    summary:
+      "A basement-level holiday home experience planned as an intimate entertainment and gathering zone.",
+    description:
+      "This GK basement project converts the lower level into a composed entertainment retreat. The design focuses on mood, comfort, and flexible hosting, using layered lighting and clean spatial organization to make the space feel immersive rather than enclosed.",
+    details: ["Entertainment basement", "Holiday home setting", "Lounge and gathering zones"],
+    images: [
+      image("GK-basement-entertainment-area-holidayhome-delhi", "Picture1.webp"),
+      image("GK-basement-entertainment-area-holidayhome-delhi", "Picture10 (1).webp"),
+      image("GK-basement-entertainment-area-holidayhome-delhi", "Picture2.webp"),
+      image("GK-basement-entertainment-area-holidayhome-delhi", "Picture3.webp"),
+      image("GK-basement-entertainment-area-holidayhome-delhi", "Picture4.webp"),
+      image("GK-basement-entertainment-area-holidayhome-delhi", "Picture5.webp"),
+      image("GK-basement-entertainment-area-holidayhome-delhi", "Picture6.webp"),
+      image("GK-basement-entertainment-area-holidayhome-delhi", "Picture7 (1).webp"),
+      image("GK-basement-entertainment-area-holidayhome-delhi", "Picture8 (1).webp"),
+      image("GK-basement-entertainment-area-holidayhome-delhi", "Picture9.webp"),
+    ],
+  },
+  {
+    slug: "lovely-residence-jalandhar",
+    folder: "lovely-residence-jalandhar",
+    title: "Lovely Residence",
+    category: "Residential Interior",
+    location: "Jalandhar",
+    year: "2026",
+    cover: image("lovely-residence-jalandhar", "11.webp"),
+    summary:
+      "A complete residence with layered living spaces, detailed finishes, and a quietly expressive material story.",
+    description:
+      "Lovely Residence is crafted as a full-family home with a strong focus on continuity between rooms. From formal areas to private corners, the project uses warm finishes, curated lighting, and custom interior details to create a cohesive residential character.",
+    details: ["Private residence", "Full home interiors", "Custom material and lighting palette"],
+    images: [
+      image("lovely-residence-jalandhar", "11.webp"),
+      image("lovely-residence-jalandhar", "12.webp"),
+      image("lovely-residence-jalandhar", "14.webp"),
+      image("lovely-residence-jalandhar", "15.webp"),
+      image("lovely-residence-jalandhar", "16.webp"),
+      image("lovely-residence-jalandhar", "17.webp"),
+      image("lovely-residence-jalandhar", "18.webp"),
+      image("lovely-residence-jalandhar", "19.webp"),
+      image("lovely-residence-jalandhar", "20.webp"),
+      image("lovely-residence-jalandhar", "21.webp"),
+      image("lovely-residence-jalandhar", "22.webp"),
+      image("lovely-residence-jalandhar", "23.webp"),
+      image("lovely-residence-jalandhar", "24.webp"),
+      image("lovely-residence-jalandhar", "25.webp"),
+      image("lovely-residence-jalandhar", "26.webp"),
+      image("lovely-residence-jalandhar", "30.webp"),
+      image("lovely-residence-jalandhar", "31.webp"),
+      image("lovely-residence-jalandhar", "32.webp"),
+      image("lovely-residence-jalandhar", "33.webp"),
+      image("lovely-residence-jalandhar", "34.webp"),
+      image("lovely-residence-jalandhar", "36.webp"),
+      image("lovely-residence-jalandhar", "37.webp"),
+      image("lovely-residence-jalandhar", "38.webp"),
+      image("lovely-residence-jalandhar", "39.webp"),
+      image("lovely-residence-jalandhar", "41.webp"),
+      image("lovely-residence-jalandhar", "42.webp"),
+      image("lovely-residence-jalandhar", "43.webp"),
+      image("lovely-residence-jalandhar", "44.webp"),
+      image("lovely-residence-jalandhar", "45.webp"),
+    ],
+  },
+  {
+    slug: "outdoor-furniture-showroom-delhi",
+    folder: "outdoor-furniture-showroom-delhi",
+    title: "Outdoor Furniture Showroom",
+    category: "Retail Showroom",
+    location: "Delhi",
+    year: "2026",
+    cover: image("outdoor-furniture-showroom-delhi", "1.webp"),
+    summary:
+      "A retail environment designed to present outdoor furniture with clarity, comfort, and lifestyle appeal.",
+    description:
+      "The Outdoor Furniture Showroom is arranged as a gallery-like retail experience where each setting can be read clearly. Natural textures, open display planning, and relaxed styling help customers imagine the pieces in terraces, gardens, and hospitality spaces.",
+    details: ["Retail showroom", "Furniture display planning", "Lifestyle-led product staging"],
+    images: [
+      image("outdoor-furniture-showroom-delhi", "1.webp"),
+      image("outdoor-furniture-showroom-delhi", "10.webp"),
+      image("outdoor-furniture-showroom-delhi", "2.webp"),
+      image("outdoor-furniture-showroom-delhi", "3.webp"),
+      image("outdoor-furniture-showroom-delhi", "4.webp"),
+      image("outdoor-furniture-showroom-delhi", "5.webp"),
+      image("outdoor-furniture-showroom-delhi", "6.webp"),
+      image("outdoor-furniture-showroom-delhi", "7.webp"),
+      image("outdoor-furniture-showroom-delhi", "8.webp"),
+      image("outdoor-furniture-showroom-delhi", "9.webp"),
+    ],
+  },
+  {
+    slug: "sunview1-ludhiana",
+    folder: "sunview1-ludhiana",
+    title: "Sunview 1",
+    category: "Residential Interior",
+    location: "Ludhiana",
+    year: "2026",
+    cover: image("sunview1-ludhiana", "444.webp"),
+    summary:
+      "A Ludhiana residence with crisp interior detailing, layered surfaces, and a contemporary domestic rhythm.",
+    description:
+      "Sunview 1 is built around a contemporary residential language: clean geometry, warm accents, and spaces that remain comfortable through daily use. The project brings together visual polish and practical planning across the home.",
+    details: ["Private residence", "Contemporary interiors", "Living, dining and bedroom environments"],
+    images: [
+      image("sunview1-ludhiana", "444.webp"),
+      image("sunview1-ludhiana", "46.webp"),
+      image("sunview1-ludhiana", "47.webp"),
+      image("sunview1-ludhiana", "49.webp"),
+      image("sunview1-ludhiana", "50.webp"),
+      image("sunview1-ludhiana", "51.webp"),
+      image("sunview1-ludhiana", "52.webp"),
+      image("sunview1-ludhiana", "53.webp"),
+      image("sunview1-ludhiana", "54.webp"),
+      image("sunview1-ludhiana", "55.webp"),
+      image("sunview1-ludhiana", "56.webp"),
+      image("sunview1-ludhiana", "57a.webp"),
+      image("sunview1-ludhiana", "58.webp"),
+      image("sunview1-ludhiana", "59.webp"),
+      image("sunview1-ludhiana", "60.webp"),
+      image("sunview1-ludhiana", "747.webp"),
+    ],
+  },
+];
+
+export function getProject(slug: string) {
+  return projects.find((project) => project.slug === slug);
+}
