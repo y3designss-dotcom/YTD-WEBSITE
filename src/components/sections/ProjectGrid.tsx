@@ -31,7 +31,7 @@ export default function ProjectGrid() {
       </div>
 
       <div className={styles.verticalList}>
-        {projects.map((project, index) => (
+        {projects.slice(0, 4).map((project, index) => (
           <ProjectCard key={project.slug} project={project} index={index} />
         ))}
       </div>

@@ -16,17 +16,17 @@ const image = (folder: string, file: string) => `/projects/${folder}/${file}`;
 
 export const projects: Project[] = [
   {
-    slug: "camelias-apartment-gurgaon",
+    slug: "mr-malhotra-809-residences-camellias",
     folder: "camelias-apartment-camelia(gurgaon)",
-    title: "Camelias Apartment",
+    title: "Mr Malhotra 809 Residences, Camellias",
     category: "Residential Interior",
     location: "Gurgaon",
     year: "2026",
-    cover: image("camelias-apartment-camelia(gurgaon)", "SOFA WALL.jpg (2) (1).webp"),
+    cover: image("camelias-apartment-camelia(gurgaon)", "TV UNIT .jpg (1).webp"),
     summary:
-      "A refined apartment interior shaped around warm surfaces, composed wall details, and a calm luxury palette.",
+      "A refined apartment interior at Camellias, Gurgaon — shaped around warm surfaces, composed wall details, and a calm luxury palette.",
     description:
-      "The Camelias Apartment is designed as a quiet, polished residence where every wall plane carries purpose. Layered shelving, tailored TV units, soft bedroom backdrops, and restrained material contrasts create a home that feels elegant without becoming loud.",
+      "Mr Malhotra's 809 Residences at Camellias is designed as a quiet, polished home where every wall plane carries purpose. Layered shelving, tailored TV units, soft bedroom backdrops, and restrained material contrasts create a residence that feels elegant without becoming loud.",
     details: ["Apartment residence", "Custom wall treatments", "Living, bedroom, TV and display areas"],
     images: [
       image("camelias-apartment-camelia(gurgaon)", "BED BACK ..webp"),
@@ -40,13 +40,30 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "mr-talwar-residence-camellias",
+    folder: "mr-talwar-residence-camellias",
+    title: "Mr Talwar Residence, Camellias",
+    category: "Residential Interior",
+    location: "Gurgaon",
+    year: "2026",
+    cover: image("mr-talwar-residence-camellias", "cover.webp"),
+    summary:
+      "A considered apartment interior at Camellias, Gurgaon — crafted with precision, warmth, and a refined residential character.",
+    description:
+      "Mr Talwar's residence at Camellias brings together a carefully curated interior language where material choices, spatial flow, and custom detailing work in harmony. The design balances luxury with liveability across every room.",
+    details: ["Apartment residence", "Custom wall treatments", "Living, bedroom and display areas"],
+    images: [
+      image("mr-talwar-residence-camellias", "cover.webp"),
+    ],
+  },
+  {
     slug: "deramandi-farmhouse",
     folder: "deramandi-farmhouse",
     title: "Deramandi Farmhouse",
     category: "Farmhouse Architecture",
     location: "Delhi NCR",
     year: "2026",
-    cover: image("deramandi-farmhouse", "2J3A7704-HDR (1).webp"),
+    cover: image("deramandi-farmhouse", "2J3A7776-HDR (1).webp"),
     summary:
       "A generous farmhouse environment balancing open-air leisure, architectural massing, and relaxed family living.",
     description:
@@ -83,18 +100,18 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "gk-basement-entertainment-area",
+    slug: "gk-entertainment-area",
     folder: "GK-basement-entertainment-area-holidayhome-delhi",
-    title: "GK Basement Entertainment Area",
-    category: "Holiday Home Interior",
+    title: "GK Entertainment Area",
+    category: "Entertainment Interior",
     location: "Delhi",
     year: "2026",
-    cover: image("GK-basement-entertainment-area-holidayhome-delhi", "Picture1.webp"),
+    cover: image("GK-basement-entertainment-area-holidayhome-delhi", "Picture5.webp"),
     summary:
-      "A basement-level holiday home experience planned as an intimate entertainment and gathering zone.",
+      "A holiday home experience planned as an intimate entertainment and gathering zone.",
     description:
-      "This GK basement project converts the lower level into a composed entertainment retreat. The design focuses on mood, comfort, and flexible hosting, using layered lighting and clean spatial organization to make the space feel immersive rather than enclosed.",
-    details: ["Entertainment basement", "Holiday home setting", "Lounge and gathering zones"],
+      "This GK project transforms a dedicated level into a composed entertainment retreat. The design focuses on mood, comfort, and flexible hosting, using layered lighting and clean spatial organization to make the space feel immersive rather than enclosed.",
+    details: ["Entertainment area", "Holiday home setting", "Lounge and gathering zones"],
     images: [
       image("GK-basement-entertainment-area-holidayhome-delhi", "Picture1.webp"),
       image("GK-basement-entertainment-area-holidayhome-delhi", "Picture10 (1).webp"),
@@ -115,7 +132,7 @@ export const projects: Project[] = [
     category: "Residential Interior",
     location: "Jalandhar",
     year: "2026",
-    cover: image("lovely-residence-jalandhar", "11.webp"),
+    cover: image("lovely-residence-jalandhar", "14.webp"),
     summary:
       "A complete residence with layered living spaces, detailed finishes, and a quietly expressive material story.",
     description:
@@ -160,7 +177,7 @@ export const projects: Project[] = [
     category: "Retail Showroom",
     location: "Delhi",
     year: "2026",
-    cover: image("outdoor-furniture-showroom-delhi", "1.webp"),
+    cover: image("outdoor-furniture-showroom-delhi", "7.webp"),
     summary:
       "A retail environment designed to present outdoor furniture with clarity, comfort, and lifestyle appeal.",
     description:
@@ -186,7 +203,7 @@ export const projects: Project[] = [
     category: "Residential Interior",
     location: "Ludhiana",
     year: "2026",
-    cover: image("sunview1-ludhiana", "444.webp"),
+    cover: image("sunview1-ludhiana", "54.webp"),
     summary:
       "A Ludhiana residence with crisp interior detailing, layered surfaces, and a contemporary domestic rhythm.",
     description:
@@ -209,6 +226,23 @@ export const projects: Project[] = [
       image("sunview1-ludhiana", "59.webp"),
       image("sunview1-ludhiana", "60.webp"),
       image("sunview1-ludhiana", "747.webp"),
+    ],
+  },
+  {
+    slug: "sunview2-ludhiana",
+    folder: "sunview2-ludhiana",
+    title: "Sunview 2",
+    category: "Residential Interior",
+    location: "Ludhiana",
+    year: "2026",
+    cover: image("sunview2-ludhiana", "cover.webp"),
+    summary:
+      "A second Ludhiana residence continuing the Sunview series with refined interiors and a contemporary domestic character.",
+    description:
+      "Sunview 2 builds on the language established in Sunview 1, delivering a contemporary residential interior with clean geometry, warm accents, and spaces designed for comfortable daily living. The project maintains visual polish while ensuring practical, liveable planning throughout.",
+    details: ["Private residence", "Contemporary interiors", "Living, dining and bedroom environments"],
+    images: [
+      image("sunview2-ludhiana", "cover.webp"),
     ],
   },
 ];
