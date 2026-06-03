@@ -125,10 +125,6 @@ function ReviewCard({ review, index }: { review: typeof reviews[0], index: numbe
              
              <div className={styles.authorBadge}>
                 <div className={styles.line}></div>
-                <div className={styles.authorInfo}>
-                   <h4 className={styles.name}>{review.name}</h4>
-                   <span className={styles.location}>{review.location}</span>
-                </div>
              </div>
           </motion.div>
 

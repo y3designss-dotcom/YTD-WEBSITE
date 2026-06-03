@@ -26,7 +26,7 @@ export const projects: Project[] = [
     summary:
       "A refined apartment interior at Camellias, Gurgaon — shaped around warm surfaces, composed wall details, and a calm luxury palette.",
     description:
-      "Mr Malhotra's 809 Residences at Camellias is designed as a quiet, polished home where every wall plane carries purpose. Layered shelving, tailored TV units, soft bedroom backdrops, and restrained material contrasts create a residence that feels elegant without becoming loud.",
+      "809 Residences at Camellias is designed as a quiet, polished home where every wall plane carries purpose. Layered shelving, tailored TV units, soft bedroom backdrops, and restrained material contrasts create a residence that feels elegant without becoming loud.",
     details: ["Apartment residence", "Custom wall treatments", "Living, bedroom, TV and display areas"],
     images: [
       image("mr malhotra 809-residences-camellias(gurgaon)", "BED BACK ..webp"),
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     category: "Residential Interior",
     location: "Gurgaon",
     year: "2026",
-    cover: image("mr talwar camellias", "14.webp"),
+    cover: image("mr talwar camellias", "1.webp"),
     summary:
       "A considered apartment interior at Camellias, Gurgaon — crafted with precision, warmth, and a refined residential character.",
     description:
@@ -91,9 +91,6 @@ export const projects: Project[] = [
     details: ["Farmhouse residence", "Indoor-outdoor planning", "Landscape-facing social spaces"],
     images: [
       image("deramandi-farmhouse", "2J3A7653-HDR Ee.webp"),
-      image("deramandi-farmhouse", "2J3A7702-HDR Ee.webp"),
-      image("deramandi-farmhouse", "2J3A7704-HDR (1).webp"),
-      image("deramandi-farmhouse", "2J3A7704-HDR (2).webp"),
       image("deramandi-farmhouse", "2J3A7716-HDR.webp"),
       image("deramandi-farmhouse", "2J3A7720-HDR.webp"),
       image("deramandi-farmhouse", "2J3A7724-HDR.webp"),
@@ -126,7 +123,7 @@ export const projects: Project[] = [
     category: "Entertainment Interior",
     location: "Delhi",
     year: "2026",
-    cover: image("GK-entertainment-area-holidayhome-delhi", "Picture5.webp"),
+    cover: image("GK-entertainment-area-holidayhome-delhi", "Picture6.webp"),
     summary:
       "A holiday home experience planned as an intimate entertainment and gathering zone.",
     description:
@@ -197,7 +194,7 @@ export const projects: Project[] = [
     category: "Retail Showroom",
     location: "Delhi",
     year: "2026",
-    cover: image("outdoor-furniture-showroom-delhi", "7.webp"),
+    cover: image("outdoor-furniture-showroom-delhi", "5.webp"),
     summary:
       "A retail environment designed to present outdoor furniture with clarity, comfort, and lifestyle appeal.",
     description:
@@ -223,7 +220,7 @@ export const projects: Project[] = [
     category: "Residential Interior",
     location: "Ludhiana",
     year: "2026",
-    cover: image("sunview1-ludhiana", "54.webp"),
+    cover: image("sunview1-ludhiana", "444.webp"),
     summary:
       "A Ludhiana residence with crisp interior detailing, layered surfaces, and a contemporary domestic rhythm.",
     description:

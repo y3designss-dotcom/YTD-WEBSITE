@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styles from './Navbar.module.css';
 
 const menuLinks = [
+  { name: 'HOME', href: '/', desc: 'RETURN TO HOMEPAGE' },
   { name: 'PROJECTS', href: '/projects', desc: 'OUR ARCHITECTURAL PORTFOLIO' },
   { name: 'STAGES', href: '/#process', desc: 'DESIGN & CREATION PROCESS' },
   { name: 'ABOUT US', href: '/#about', desc: 'STUDIO PHILOSOPHY & MISSION' },
