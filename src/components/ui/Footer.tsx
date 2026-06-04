@@ -21,6 +21,17 @@ export default function Footer() {
             </div>
 
             <div className={styles.col}>
+              <span className={styles.colLabel}>CONTACT</span>
+              <div className={styles.colList}>
+                <p className={styles.colVal}>
+                  <a href="mailto:ritikka@ytredezeen.com" className={styles.colVal}>ritikka@ytredezeen.com</a>
+                  <br />
+                  <a href="tel:+919501599998" className={styles.colVal}>+91 95015 99998</a>
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.col}>
               <span className={styles.colLabel}>NAVIGATION</span>
               <nav className={styles.colNav}>
                 <Link href="/projects">PORTFOLIO</Link>

@@ -64,9 +64,11 @@ export default function Contact() {
             <div className={styles.infoCol}>
               <div className={styles.reachBlock}>
                 <span className={styles.infoLabel}>General Inquiries</span>
-                <p className={styles.infoValue}>office@ytdarchitects.com</p>
+                <p className={styles.infoValue}>ritikka@ytredezeen.com</p>
               </div>
+
               
+
               <div className={styles.reachBlock}>
                 <span className={styles.infoLabel}>Studio Location</span>
                 <p className={styles.infoValue}>Delhi, India</p>
@@ -74,7 +76,7 @@ export default function Contact() {
 
               <div className={styles.reachBlock}>
                 <span className={styles.infoLabel}>Direct Line</span>
-                <p className={styles.infoValue}>+91 9811111111</p>
+                <p className={styles.infoValue}>+91 95015 99998</p>
               </div>
 
               <div className={styles.socials}>
@@ -88,12 +90,12 @@ export default function Contact() {
               <form className={styles.form}>
                 <div className={styles.inputGroup}>
                   <label className={styles.inputLabel}>FULL NAME</label>
-                  <input type="text" className={styles.input} placeholder="John Doe" />
+                  <input type="text" className={styles.input} placeholder="YOUR NAME" />
                 </div>
                 
                 <div className={styles.inputGroup}>
                   <label className={styles.inputLabel}>EMAIL ADDRESS</label>
-                  <input type="email" className={styles.input} placeholder="john@example.com" />
+                  <input type="email" className={styles.input} placeholder="YOUR EMAIL" />
                 </div>
 
                 <div className={styles.inputGroup}>

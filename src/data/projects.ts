@@ -114,6 +114,11 @@ export const projects: Project[] = [
       image("deramandi-farmhouse", "2J3A7995-HDR.webp"),
       image("deramandi-farmhouse", "2J3A7999-HDR.webp"),
       image("deramandi-farmhouse", "2J3A8003-HDR.webp"),
+      image("deramandi-farmhouse", "WhatsApp Image 2026-05-29 at 11.58.42.webp"),
+      image("deramandi-farmhouse", "WhatsApp Image 2026-05-29 at 11.58.42 (1).webp"),
+      image("deramandi-farmhouse", "WhatsApp Image 2026-05-29 at 11.58.42 (2).webp"),
+      image("deramandi-farmhouse", "WhatsApp Image 2026-05-29 at 11.58.42 (3).webp"),
+      image("deramandi-farmhouse", "WhatsApp Image 2026-05-29 at 11.58.42 (4).webp"),
     ],
   },
   {
