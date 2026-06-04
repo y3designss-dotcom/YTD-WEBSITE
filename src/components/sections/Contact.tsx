@@ -67,7 +67,10 @@ export default function Contact() {
                 <p className={styles.infoValue}>ritikka@ytredezeen.com</p>
               </div>
 
-              
+              <div className={styles.reachBlock}>
+                <span className={styles.infoLabel}>Contact Person</span>
+                <p className={styles.infoValue}>Reettika Puri</p>
+              </div>
 
               <div className={styles.reachBlock}>
                 <span className={styles.infoLabel}>Studio Location</span>
@@ -101,9 +104,8 @@ export default function Contact() {
                 <div className={styles.inputGroup}>
                   <label className={styles.inputLabel}>PROJECT TYPE</label>
                   <select className={styles.input}>
+                    <option>Residence</option>
                     <option>Commercial</option>
-                    <option>Residential</option>
-                    <option>Industrial</option>
                   </select>
                 </div>
 
