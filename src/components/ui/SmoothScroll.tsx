@@ -29,7 +29,31 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
 
     requestAnimationFrame(raf);
 
+    function onClick(e: MouseEvent) {
+      const anchor = (e.target as HTMLElement).closest('a[href*="#"]') as HTMLAnchorElement | null;
+      if (!anchor) return;
+
+      const url = new URL(anchor.href, window.location.href);
+      if (url.pathname !== window.location.pathname || !url.hash) return;
+
+      const target = document.querySelector(url.hash);
+      if (!target) return;
+
+      e.preventDefault();
+      lenis.scrollTo(target as HTMLElement, { duration: 1.2 });
+    }
+
+    document.addEventListener('click', onClick);
+
+    if (window.location.hash) {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        requestAnimationFrame(() => lenis.scrollTo(target as HTMLElement, { immediate: true }));
+      }
+    }
+
     return () => {
+      document.removeEventListener('click', onClick);
       lenis.destroy();
       lenisRef.current = null;
     };

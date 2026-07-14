@@ -96,7 +96,7 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.5, duration: 1 }}
           >
-            <div className={styles.ctaCircle}>
+            <a href="#contacts" className={styles.ctaCircle} aria-label="Send request">
               <div className={styles.ctaText}>
                 <span>SEND</span>
                 <span>REQUEST</span>
@@ -106,7 +106,7 @@ export default function Hero() {
                   <path d="M0 10H58M58 10L50 2M58 10L50 18" stroke="currentColor" strokeWidth="1"/>
                 </svg>
               </div>
-            </div>
+            </a>
           </motion.div>
         </div>
       </div>
