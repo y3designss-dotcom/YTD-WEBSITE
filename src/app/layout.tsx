@@ -8,9 +8,13 @@ export const metadata: Metadata = {
   title: "YTD Architects | Design & Architecture Studio",
   description: "Full cycle studio of design and architecture. Replicating premium architectural aesthetics.",
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
 };
 

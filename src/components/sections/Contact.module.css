@@ -152,6 +152,8 @@
   font-weight: 700;
   opacity: 0.4;
   cursor: pointer;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Form Column */

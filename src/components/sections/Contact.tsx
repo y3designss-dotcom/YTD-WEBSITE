@@ -83,7 +83,7 @@ export default function Contact() {
               </div>
 
               <div className={styles.socials}>
-                 <span className={styles.socialLink}>INSTAGRAM</span>
+                 <a href="https://www.instagram.com/ytre_dezeen?igsh=MTdqN2lnMzR5Y3U5OA==" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>INSTAGRAM</a>
                  <span className={styles.socialLink}>LINKEDIN</span>
                  <span className={styles.socialLink}>BEHANCE</span>
               </div>
