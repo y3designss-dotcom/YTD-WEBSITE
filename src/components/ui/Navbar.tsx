@@ -118,8 +118,6 @@ export default function Navbar() {
                       <span>FOLLOW US</span>
                       <div className={styles.socialLinks}>
                          <a href="https://www.instagram.com/ytre_dezeen?igsh=MTdqN2lnMzR5Y3U5OA==" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
-                         <a href="#">BEHANCE</a>
-                         <a href="#">LINKEDIN</a>
                       </div>
                    </div>
                    <div className={styles.footerCol}>
