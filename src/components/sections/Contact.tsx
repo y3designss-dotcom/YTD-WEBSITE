@@ -7,6 +7,46 @@ import styles from "./Contact.module.css";
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
   const [isMobile, setIsMobile] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    projectType: "Residence",
+    message: "",
+  });
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("sending");
+    setErrorMsg("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || "Something went wrong.");
+      }
+
+      setStatus("sent");
+      setFormData({ name: "", email: "", projectType: "Residence", message: "" });
+    } catch (err) {
+      setStatus("error");
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong.");
+    }
+  };
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 1024);
@@ -88,20 +128,41 @@ export default function Contact() {
             </div>
 
             <div className={styles.formCol}>
-              <form className={styles.form}>
+              <form className={styles.form} onSubmit={handleSubmit}>
                 <div className={styles.inputGroup}>
                   <label className={styles.inputLabel}>FULL NAME</label>
-                  <input type="text" className={styles.input} placeholder="YOUR NAME" />
+                  <input
+                    type="text"
+                    name="name"
+                    className={styles.input}
+                    placeholder="YOUR NAME"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
-                
+
                 <div className={styles.inputGroup}>
                   <label className={styles.inputLabel}>EMAIL ADDRESS</label>
-                  <input type="email" className={styles.input} placeholder="YOUR EMAIL" />
+                  <input
+                    type="email"
+                    name="email"
+                    className={styles.input}
+                    placeholder="YOUR EMAIL"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
 
                 <div className={styles.inputGroup}>
                   <label className={styles.inputLabel}>PROJECT TYPE</label>
-                  <select className={styles.input}>
+                  <select
+                    name="projectType"
+                    className={styles.input}
+                    value={formData.projectType}
+                    onChange={handleChange}
+                  >
                     <option>Residence</option>
                     <option>Commercial</option>
                   </select>
@@ -109,11 +170,27 @@ export default function Contact() {
 
                 <div className={styles.inputGroup}>
                   <label className={styles.inputLabel}>YOUR MESSAGE</label>
-                  <textarea className={styles.textarea} placeholder="Describe your vision..." rows={3}></textarea>
+                  <textarea
+                    name="message"
+                    className={styles.textarea}
+                    placeholder="Describe your vision..."
+                    rows={3}
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                  ></textarea>
                 </div>
-                <button type="submit" className={styles.submitBtn}>
-                   <span>SEND INQUIRY</span>
+                <button type="submit" className={styles.submitBtn} disabled={status === "sending"}>
+                   <span>
+                     {status === "sending" ? "SENDING..." : "SEND INQUIRY"}
+                   </span>
                 </button>
+                {status === "sent" && (
+                  <p className={styles.formStatus}>Thanks! Your inquiry has been sent.</p>
+                )}
+                {status === "error" && (
+                  <p className={styles.formStatus}>{errorMsg || "Failed to send. Please try again."}</p>
+                )}
               </form>
             </div>
 

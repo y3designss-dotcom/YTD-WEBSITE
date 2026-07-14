@@ -251,6 +251,17 @@ select.input option {
   color: #000;
 }
 
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.formStatus {
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  opacity: 0.85;
+}
+
 @media (max-width: 1024px) {
   .header {
      padding: 8vh 8vw 4vh;
